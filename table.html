@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Учебный центр - Фреймовая структура</title>
+</head>
+<frameset rows="120, *">
+    <!-- Верхний фрейм: Шапка -->
+    <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: sans-serif; background: #fff; margin: 0; padding: 10px; border-bottom: 2px solid #ddd; }
+        header { display: flex; justify-content: space-between; align-items: center; }
+        h1 { background: rgba(0, 123, 255, 0.1); padding: 5px 15px; border-radius: 5px; color: #333; margin: 0; }
+        .home-btn { background: #007bff; color: white; padding: 8px 15px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Образовательная Платформа</h1>
+        <a href="register.html" class="home-btn" target="main_display">Регистрация</a>
+    </header>
+</body>
+</html>
+
+    <frame src="top.html" name="header" scrolling="no" noresize>
+    
+    <frameset cols="250, *">
+        <!-- Левый фрейм: Меню -->
+        <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: sans-serif; background: #f8f9fa; padding: 15px; }
+        nav { display: flex; flex-direction: column; gap: 10px; }
+        a { text-decoration: none; color: #007bff; font-weight: bold; padding: 8px; border-radius: 4px; }
+        a:hover { background: #e9ecef; }
+    </style>
+</head>
+<body>
+    <h3>Навигация</h3>
+    <nav>
+        <a href="content.html" target="main_display">Главная</a>
+        <a href="progr.html" target="main_display">Основы HTML</a>
+        <a href="osmonov.html" target="main_display">Кыргызская литература</a>
+        <a href="manas.html" target="main_display">Манасоведение</a>
+        <a href="#" target="main_display">Контакты</a>
+    </nav>
+</body>
+</html>
+
+        <frame src="menu.html" name="menu">
+        <!-- Правый фрейм: Контент (сюда будут загружаться страницы) -->
+        <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { 
+            background-image: url('image/background.jpg'); 
+            background-size: cover; background-attachment: fixed;
+            font-family: sans-serif; padding: 20px; color: #333;
+        }
+        .course, footer { 
+            background: rgba(255, 255, 255, 0.9); 
+            padding: 15px; border-radius: 8px; margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h2 { background: rgba(255, 255, 255, 0.8); display: inline-block; padding: 5px 15px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h2>Наши направления:</h2>
+    <div class="course">
+        <h3>Основы HTML</h3>
+        <p>Научитесь создавать структуру сайтов за 2 недели.</p>
+    </div>
+    <div class="course">
+        <h3>Кыргызская литература</h3>
+        <p>Помогаем подтянуть школьную программу интересно.</p>
+    </div>
+    <footer>
+        <p>Email: <b>sharshenaliev_n@iuca.kg</b></p>
+    </footer>
+</body>
+</html>
+
+        <frame src="content.html" name="main_display">
+    </frameset>
+</frameset>
+</html>
+
+

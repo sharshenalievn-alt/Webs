@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Учебный центр</title>
+    <style>
+        body {
+            background-image: url('image/background.jpg'); 
+            background-repeat: no-repeat; 
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            font-family: sans-serif; 
+            max-width: 700px; 
+            margin: auto; 
+            padding: 20px; 
+            line-height: 1.5;
+            color: #333;
+        }
+
+       
+        header, nav, .course, footer {
+            background: rgba(255, 255, 255, 0.9); 
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        h1, h2 {
+            background: rgba(255, 255, 255, 0.8);
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 5px;
+        }
+
+      
+        nav { 
+            display: flex; 
+            gap: 15px; 
+            border: 1px solid #ddd;
+        }
+        nav a { 
+            text-decoration: none; 
+            color: #007bff; 
+            font-weight: bold;
+        }
+        nav a:hover { color: #0056b3; }
+
+        
+        
+
+       
+        .course { 
+            border: none; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+            transition: transform 0.2s;
+        }
+        .course:hover {
+            transform: translateY(-3px); 
+        }
+        .course h3 a { color: #d9534f; text-decoration: none; }
+    </style>
+</head>
+<body>
+    
+
+    <header>
+        <nav>
+             <h1><em>Платформа StudyPortals</em></h1>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Наши направления:</h2>
+
+        <div class="course">
+            <h3><a href="progr.html">Основы HTML</a></h3>
+            <p>Научитесь создавать структуру сайтов за 2 недели.</p>
+        </div>
+
+        <div class="course">
+            <h3><a href="osmonov.html">Кыргызская литература</a></h3>
+            <p>Помогаем подтянуть школьную программу интересно.</p>
+        </div>
+
+        <div class="course">
+            <h3><a href="manas.html">Манасоведение</a></h3>
+            <p>Помогаем подтянуть школьную программу интересно.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>По вопросам обучения пишите на: <b>sharshenaliev_n@iuca.kg</b></p>
+    </footer>
+</body>
+</html>
+
